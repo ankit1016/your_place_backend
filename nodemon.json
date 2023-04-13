@@ -1,9 +1,0 @@
-{
-    "env":{
-        "DB_USER":"ankit_your_places",
-        "DB_PASSWORD":"tNsCReMXiy52ua5R",
-        "DB_NAME":"yourplace",
-        "JWT_KEY":"eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTY4MTM4ODA2NiwiaWF0IjoxNjgxMzg4MDY2fQ.MVRKAJJlHz9KOri1-SHHnm9wZ2JYfjNym4YjjuPoHSs"
-    }
-
-}
