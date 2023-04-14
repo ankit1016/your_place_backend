@@ -11,6 +11,15 @@ const HttpError = require('./models/http-error');
 
 // Extends the express app with a new app.
 const app=express();
+// Define a route for the homepage
+app.get('/', (req, res) => {
+    res.send('Welcome to application');
+  });
+  
+  // Define a route for a custom message
+  app.get('/message', (req, res) => {
+    res.send('you are on message route thanks for visiting');
+  });
 
 
 // Returns true if the request was successful.
