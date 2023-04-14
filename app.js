@@ -66,7 +66,7 @@ res.json({message:error.message||'An unknown error occurred!'})
 // Starts the server on the specified port
 mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.cfcau.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`).then(()=>{
         console.log('database connected successfully')
-       app.listen(process.env.PORT||5000,(err)=>{
+       app.listen(process.env.PORT||5001,(err)=>{
         if(err)
         console.log(err)
         else
