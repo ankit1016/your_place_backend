@@ -8,7 +8,7 @@ const placesRoutes=require('./routes/places-route');
 const userRoutes=require('./routes/user-route')
 const HttpError = require('./models/http-error');
 
-
+require('dotenv').config();
 // Extends the express app with a new app.
 const app=express();
 // Define a route for the homepage
@@ -66,11 +66,11 @@ res.json({message:error.message||'An unknown error occurred!'})
 // Starts the server on the specified port
 mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.cfcau.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`).then(()=>{
         console.log('database connected successfully')
-       app.listen(process.env.PORT||5001,(err)=>{
+       app.listen(process.env.PORT||5000,(err)=>{
         if(err)
         console.log(err)
         else
-        console.log('server running on port 5000')
+        console.log(`server running on port ${process.env.PORT}`)
        })
 }).catch(err=>console.log(err))
 
